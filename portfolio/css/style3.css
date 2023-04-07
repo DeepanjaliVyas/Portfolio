@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&family=Righteous&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&family=Righteous&family=Roboto+Slab:wght@500&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&family=Edu+VIC+WA+NT+Beginner&family=Lobster&family=Righteous&family=Roboto+Slab:wght@500&family=Rubik+Moonrocks&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.sidebar{
+    position:relative;
+    background-color:rgb(51, 50, 50);
+    width:255px;
+    min-height:100vh;
+    font-family:'Bree Serif', serif;
+    
+}
+.sidebar nav{
+    padding:55px;
+}
+.sidebar nav li{
+    list-style:none;
+    font-size:20px;
+    padding:30px 0px;
+    
+    
+
+}
+
+.sidebar nav li a{
+    text-decoration:none;
+    color:white;
+    
+}
+.sidebar nav li a:hover{
+    color:blue;
+    text-transform: uppercase;
+    
+}
+.hamburger{
+    position:absolute;
+    cursor:pointer;
+    top:10px;
+    left:10px;
+
+}
+.cross{
+    margin-left:150px;
+    margin-top:10px;
+}
+.sidebarGo{
+    transform: translate(-255px,0px);
+    position:absolute;
+}
+.main{
+    
+    background-color:black;
+    width:100vw;
+    min-height:100vh;
+}
+.container{
+    display:flex;
+}
+.infoContainer{
+    background-color:rgb(53, 43, 43);
+    height:70vh;
+    width:75vw;
+    margin:100px auto;
+    display:flex;
+   justify-content:space-around;
+   flex-wrap: wrap;
+    
+}
+.devinfo{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    color:red;
+    font-family: 'Source Code Pro', monospace;
+   
+
+}
+.devinfo p{
+    padding:15px;
+    font-weight:bold;
+}
+.hello{
+    font-size: 70px;
+
+    
+}
+.name{
+    font-size:50px;
+    font-family:'Bree Serif', serif;
+}
+.about{
+  font-size:40px;
+}
+.buttons{
+   margin:34px;
+}
+.btn{
+    padding:9px 14px;
+    border-radius:22px;
+    color:white;
+    background-color:mediumseagreen;
+    font-weight:bold;
+    font-size:21px;
+    margin:0 3px;
+    cursor:pointer;
+
+
+}
+.btn-sn{
+    font-size:14px;
+    padding:10px 19px;
+    margin:12px 0;
+}
+.btn:hover{
+    background-color:gray;
+    color:burlywood;
+
+}
+
+.devpic img{
+   width:250px;
+   border-radius:50%;
+   position:relative;
+   top:50%;
+   left:45%;
+   transform:translate(-50%,-50%);
+   padding:8px;
+   background:linear-gradient(135deg,red,blue,white 50%);
+   background-size:250%;
+   background-position:100% 100%;
+   transition:background 0.5s;
+}
+.devpic img:hover{
+    background-position:0% 0%;
+}
+.contactform{
+    font-family: 'Ubuntu', sans-serif;
+    padding-top:100px;
+    padding-left:50px;
+    color:rgb(255, 255, 255);
+}
+.contactform h1{
+    font-family:'Bree Serif', serif;
+    padding: 12px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display:flex;
+    flex-direction:column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin:6px 0 0 0;
+    padding: 3px;
+}
+#emailhelp{
+    font-size: 11px;
+    color:rgb(255, 251, 0);
+    margin:0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction:row;
+}
+#form-check input{
+    width:24px;
+    margin:3px 0;
+}
+.projectcontainer{
+    margin:0 80px;
+    padding:20px;
+}
+.projectcontainer h1{
+    font-family:'Satisfy', cursive;
+    color:crimson;
+    font-weight: bolder;
+    font-size:50px;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+
+}
+.projectsitem li{
+    padding:20px;
+}
+.projectsitem li a{
+     
+     font-size:30px;
+     text-decoration:none;
+     color:blueviolet;
+     
+     -webkit-transition:font-size 0.9s linear;
+    -moz-transition:font-size 0.9s linear;
+    -o-transition:font-size 0.9s linear;
+    -ms-transition:font-size 0.9s linear;
+    transition:font-size 0.9s linear;
+     }
+ .projectsitem li a:hover{
+    cursor:pointer;
+    background-color:rgb(23, 139, 114);
+    border-radius:10px;
+    justify-content:space-around;
+    font-size:20px;
+    font-weight:bold;
+    color:rgb(102, 13, 102);
+
+ }   
+.intro{
+    color:white;
+    margin:20px;
+}
+.about_container{
+    font-family: 'Satisfy', cursive;
+    font-size:large;
+    font-weight:bolder;
+    color:khaki
+}
+ .info-items{
+   padding:15px;
+   
+}
+.info-items p{
+    font-weight:bold;
+    font-size:20px;
+    color:khaki;
+   
+}
+.info-items img{
+    width:150px;
+    padding:15px;
+}
+.info-items ul li{
+    display:inline-block;
+    padding:15px 70px;
+}
+.intro h2{
+    font-family:'Bree Serif', serif;
+    color:blue;
+    padding:20px;
+    font-size:50px;
+}
+.skillcontainer li{
+    display:inline-flex;
+   
+    font-family: 'Rubik Moonrocks', cursive;
+    padding: 10px;
+    margin:15px;
+    color:orangered;
+    font-size:large;
+    font-weight:bold;
+    -webkit-transition:font-size 0.3s ease;
+    -moz-transition:font-size 0.3s ease;
+    -o-transition:font-size 0.3s ease;
+    -ms-transition:font-size 0.3s ease;
+    transition:font-size 0.3s ease;
+    
+
+}
+
+.skillcontainer li:hover{
+    background-color:rgb(64, 64, 138);
+    border-radius:10px;
+    justify-content:space-around;
+    padding:9px 9px;
+
+}
+.projectcontainer{
+    color:red;
+    text-decoration:none;
+
+}
+
+.projectitem li a{
+    text-decoration:none;
+    font-size:25px;
+    color:rgb(240, 28, 240);
+    
+    -webkit-transition:font-size 0.1s ease;
+    -moz-transition:font-size 0.1s ease;
+    -o-transition:font-size 0.3s ease;
+    -ms-transition:font-size 0.3s ease;
+    transition:font-size 0.3s ease;
+}   
+.projectitem li a:hover{
+    background-color:white;
+    border-radius:10px;
+    justify-content:space-around;
+    font-size:20px;
+    font-weight:bold;
+    color:rgb(102, 13, 102);
+}
+@media (max-width: 1106px) {       
+        .devpic img{
+           display:none;
+        }
+}

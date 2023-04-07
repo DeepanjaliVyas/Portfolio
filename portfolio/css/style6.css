@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Luckiest+Guy&family=Permanent+Marker&display=swap');
+html{
+    height:100%;
+    background: radial-gradient(circle,#e9d8d8,#c2bebe);
+}
+.container{
+    height:450px;
+    width:750px;
+    background-color:#82b9e6;
+    margin: 100px auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow: 10px 10px 0px 0px #2589db;
+    -webkit-box-shadow: 10px 10px 0px 0px #2589db;
+    -moz-box-shadow: 10px 10px 0px 0px #2589db;
+    position:relative;
+
+}
+.score{
+   
+    background-color:rgb(240, 240, 42);
+    padding:10px;
+    position:absolute;
+    left:680px;
+    font-weight: bold;
+    font-size: large;
+    color:brown;
+    border-radius:8px;
+    box-shadow: 5px 5px 0px 0px #9dad0d;
+    -webkit-box-shadow: 5px 5px 0px 0px #9dad0d;
+    -moz-box-shadow: 5px 5px 0px 0px #9dad0d;
+}
+#correct{
+    position:absolute;
+    background-color:darkgreen;
+    left:350px;
+    padding: 11px;
+    color:aliceblue;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 5px 5px 0px 0px #0b3602;
+    -webkit-box-shadow: 5px 5px 0px 0px #0b3602;
+    -moz-box-shadow: 5px 5px 0px 0px #0b3602;
+    display:none;
+}
+#wrong{
+    position:absolute;
+    background-color:rgb(219, 39, 15);
+    left:350px;
+    padding: 11px;
+    color:aliceblue;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 5px 5px 0px 0px #810f07;
+    -webkit-box-shadow: 5px 5px 0px 0px #810f07;
+    -moz-box-shadow: 5px 5px 0px 0px #810f07;
+    display:none;
+}
+#question{
+    background-color:blueviolet;
+    width:550px;
+    height:150px;
+    margin:60px auto 10px auto; 
+    border-radius: 4px;
+    box-shadow: 0px 8px 0px 0px #454a7a;
+    -webkit-box-shadow: 0px 8px 0px 0px #454a7a;
+    -moz-box-shadow: 0px 8px 0px 0px #454a7a;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: cursive,Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+    color:black;
+}
+#instruction{
+    background-color:#be66b7;
+    width:510px;
+    height:15px;
+    margin:15px auto 10px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 0px 0px #922c96;
+    -webkit-box-shadow: 0px 8px 0px 0px #922c96;
+    -moz-box-shadow: 0px 8px 0px 0px #922c96;
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    padding:20px;
+    font-size: large;
+}
+#choice{
+    width:550px;
+    height:100px;
+    margin:15px auto;
+    
+}
+.box{
+    float:left;
+    background-color: #f3ebeb;
+    width:100px;
+    height:100px;
+    margin-right:50px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 0px 0px #bebaba;
+    -webkit-box-shadow: 0px 8px 0px 0px #bebaba;
+    -moz-box-shadow: 0px 8px 0px 0px #bebaba;
+    font-size:large;
+    text-align:center;
+    line-height:88px;
+    font-weight: bold;
+    transition:all .2s;
+    -webkit-transition:all .2s;
+    -moz-transition:all .2s;
+    -o-transition:all .2s;
+    -ms-transition:all .2s;
+}
+#box4{
+    margin-right: 0px;
+}
+.box:hover{
+        cursor:pointer;
+        background-color:blueviolet;
+        box-shadow: 0px 8px 0px 0px #454a7a;
+        color:white;
+}
+.box:active{
+    box-shadow: 0px 0px #454a7a;
+    -webkit-box-shadow: 0px 0px #454a7a;
+    -moz-box-shadow: 0px 0px #454a7a;
+}
+#startreset{
+    width:90px;
+    background-color:#86ee7d;
+    padding:5px;
+    margin:0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 8px 0px 0px #548f4c;
+    -webkit-box-shadow: 0px 8px 0px 0px #548f4c;
+    -moz-box-shadow: 0px 8px 0px 0px #548f4c;
+    font-size:large;
+    text-align:center;
+    line-height:20px;
+    font-weight: bold;
+    transition:all .2s;
+    -webkit-transition:all .2s;
+    -moz-transition:all .2s;
+    -o-transition:all .2s;
+    -ms-transition:all .2s;
+
+}
+#startreset:hover{
+    cursor:pointer;
+    background-color:#f16191;
+    box-shadow: 0px 8px 0px 0px #aa2a70;
+    -webkit-box-shadow: 0px 8px 0px 0px #aa2a70;
+    -moz-box-shadow: 0px 8px 0px 0px #aa2a70;
+    color:rgb(56, 14, 90);
+}
+#startreset:active{
+    box-shadow: 0px 0px #72ee7c;
+    -webkit-box-shadow: 0px 0px #3ca732;
+    -moz-box-shadow: 0px 0px #3ca732;
+}
+#timeremaining{
+    left:550px;
+    background-color:#ee8369;
+    position:absolute;
+    padding:10px;
+    top:430px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0px 0px #c46244;
+    -webkit-box-shadow: 5px 5px 0px 0px #c46244;
+    -moz-box-shadow: 5px 5px 0px 0px #c46244;
+    font-size:large;
+    text-align:center;
+    line-height:20px;
+    font-weight: bold;
+    display:none;
+
+}
+#gameOver{
+    width:500px;
+    height:200px;
+    background: linear-gradient(#f7a75d, #743a28 );
+    font-size:40px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight: bold;
+    padding:30px;
+    font-family: 'Luckiest Guy', cursive;
+    color:rgb(20, 14, 5);
+    position:absolute;
+    top:100px;
+    left:115px;
+    display:none;
+
+}
+#scorevalue{
+    color:red;
+}
